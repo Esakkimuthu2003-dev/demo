@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Esakkimuthu</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navbar */
+        header {
+            background: #ffffff;
+            padding: 20px 50px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: #0d6efd;
+            font-size: 28px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #0d6efd;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 50px;
+        }
+
+        #home {
+            background: #f5f7fa;
+        }
+
+        #home h2 span {
+            color: #0d6efd;
+        }
+
+        #home p {
+            max-width: 600px;
+            margin-top: 15px;
+        }
+
+        /* About */
+        #about h3 span {
+            color: #0d6efd;
+        }
+
+        /* Contact */
+        #contact {
+            background: #f5f7fa;
+            text-align: center;
+        }
+
+        #contact p {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h1>Portfolio</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Full Stack <span>Developer</span></h2>
+    <p>
+        Programming is a blend of creativity and logic. I enjoy building clean,
+        efficient, and user-friendly web applications using modern technologies.
+    </p>
+</section>
+
+<section id="about">
+    <h3>About <span>Me</span></h3>
+    <p>
+        I am Esakkimuthu, a B.Sc. Chemistry graduate currently training in Full Stack
+        Development. I transitioned into software development driven by curiosity
+        and a passion for problem-solving.
+    </p>
+    <p>
+        My focus is on creating reliable and scalable applications while continuously
+        improving my technical and analytical skills.
+    </p>
+</section>
+
+<section id="contact">
+    <h3>Contact</h3>
+    <p>Email: livetech@gmail.com</p>
+    <p>Phone: 8754951094</p>
+</section>
+
+<footer>
+    © 2026 Esakkimuthu. All rights reserved.
+</footer>
+
+<!-- Internal JS -->
+<script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href'))
+                .scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
+
+</body>
+</html>
